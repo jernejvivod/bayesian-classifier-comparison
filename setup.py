@@ -1,17 +1,18 @@
 from setuptools import setup
 
 setup(name='bayesian_classifier_comparison',
-      version='0.2',
+      version='0.1',
       description='Compare performance of classification algorithms using Bayesian statistics',
       url='https://github.com/jernejvivod/bayesian-classifier-comparison',
       author='Jernej Vivod',
       author_email='vivod.jernej@gmail.com',
       packages=['bayesian_classifier_comparison'],
       install_requires=[
+          'matplotlib',
           'numpy',
+          'seaborn',
           'scipy',
-          'sklearn',
-          'julia',
+          'pystan'
       ],
       classifiers=[
           'Intended Audience :: Developers',
